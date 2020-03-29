@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30937827242E44CB000C2DE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30937826242E44CB000C2DE4 /* AppDelegate.m */; };
+		3093782A242E44CB000C2DE4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30937829242E44CB000C2DE4 /* SceneDelegate.m */; };
+		30937830242E44CB000C2DE4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3093782F242E44CB000C2DE4 /* SecondViewController.m */; };
+		30937833242E44CB000C2DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30937831242E44CB000C2DE4 /* Main.storyboard */; };
+		30937835242E44CD000C2DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30937834242E44CD000C2DE4 /* Assets.xcassets */; };
+		30937838242E44CD000C2DE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30937836242E44CD000C2DE4 /* LaunchScreen.storyboard */; };
+		3093783B242E44CD000C2DE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3093783A242E44CD000C2DE4 /* main.m */; };
+		309FFD4B243044B900360B79 /* TAMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD4A243044B900360B79 /* TAMineViewController.m */; };
+		309FFD5124305E7C00360B79 /* TAFamilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD5024305E7C00360B79 /* TAFamilyViewController.m */; };
+		309FFD5424305F7D00360B79 /* TAAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD5324305F7D00360B79 /* TAAccountViewController.m */; };
+		309FFD58243062D900360B79 /* TANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD57243062D900360B79 /* TANavigationController.m */; };
+		309FFD63243068C200360B79 /* ta_kefu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD5B243068C200360B79 /* ta_kefu@3x.png */; };
+		309FFD64243068C200360B79 /* ta_setting@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD5C243068C200360B79 /* ta_setting@3x.png */; };
+		309FFD65243068C200360B79 /* ta_remind@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD5D243068C200360B79 /* ta_remind@3x.png */; };
+		309FFD66243068C200360B79 /* ta_logout@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD5E243068C200360B79 /* ta_logout@3x.png */; };
+		309FFD67243068C200360B79 /* ta_feedback@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD5F243068C200360B79 /* ta_feedback@3x.png */; };
+		309FFD68243068C200360B79 /* ta_message@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD60243068C200360B79 /* ta_message@3x.png */; };
+		309FFD69243068C200360B79 /* ta_about@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD61243068C200360B79 /* ta_about@3x.png */; };
+		309FFD6A243068C200360B79 /* ta_cache@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD62243068C200360B79 /* ta_cache@3x.png */; };
+		309FFD6E2430690000360B79 /* TAMineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD6C2430690000360B79 /* TAMineCell.m */; };
+		309FFD6F2430690000360B79 /* TAMineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD6D2430690000360B79 /* TAMineCell.xib */; };
+		309FFD722430693500360B79 /* TAMineHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD712430693500360B79 /* TAMineHeadView.m */; };
+		309FFD742430694500360B79 /* TAMineHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD732430694500360B79 /* TAMineHeadView.xib */; };
+		309FFD7624306A5B00360B79 /* taappicon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD7524306A5B00360B79 /* taappicon@3x.png */; };
+		309FFD7B2430719500360B79 /* TAFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD792430719500360B79 /* TAFeedViewController.m */; };
+		309FFD7C2430719500360B79 /* TAFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD7A2430719500360B79 /* TAFeedViewController.xib */; };
+		309FFD892430760800360B79 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD7F2430760800360B79 /* SVRadialGradientLayer.m */; };
+		309FFD8A2430760800360B79 /* MBProgressHUD+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD822430760800360B79 /* MBProgressHUD+NJ.m */; };
+		309FFD8B2430760800360B79 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD862430760800360B79 /* SVProgressHUD.m */; };
+		309FFD8C2430760800360B79 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD872430760800360B79 /* SVIndefiniteAnimatedView.m */; };
+		309FFD8D2430760800360B79 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD882430760800360B79 /* SVProgressHUD.bundle */; };
+		309FFD922430778800360B79 /* TAAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD902430778800360B79 /* TAAboutViewController.m */; };
+		309FFD932430778800360B79 /* TAAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD912430778800360B79 /* TAAboutViewController.xib */; };
+		309FFD9A24307A4300360B79 /* TALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD9824307A4300360B79 /* TALoginViewController.m */; };
+		309FFD9B24307A4300360B79 /* TALoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD9924307A4300360B79 /* TALoginViewController.xib */; };
+		309FFD9E24307F7400360B79 /* TATextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD9D24307F7400360B79 /* TATextField.m */; };
+		309FFDA024307FCA00360B79 /* login_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD9F24307FCA00360B79 /* login_background.png */; };
+		309FFDA4243081A600360B79 /* TARegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFDA2243081A600360B79 /* TARegisterViewController.m */; };
+		309FFDA5243081A600360B79 /* TARegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309FFDA3243081A600360B79 /* TARegisterViewController.xib */; };
+		309FFDA9243086EF00360B79 /* TAPrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFDA7243086EF00360B79 /* TAPrivacyViewController.m */; };
+		309FFDAA243086EF00360B79 /* TAPrivacyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309FFDA8243086EF00360B79 /* TAPrivacyViewController.xib */; };
+		309FFDAC2430882200360B79 /* ta_close_button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309FFDAB2430882200360B79 /* ta_close_button@3x.png */; };
+		6002BA4411B7418F491A96E3 /* libPods-takahina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C32AF134ED2362E23B6F5D6 /* libPods-takahina.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30937822242E44CB000C2DE4 /* takahina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = takahina.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30937825242E44CB000C2DE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		30937826242E44CB000C2DE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		30937828242E44CB000C2DE4 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		30937829242E44CB000C2DE4 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		3093782E242E44CB000C2DE4 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		3093782F242E44CB000C2DE4 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		30937832242E44CB000C2DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30937834242E44CD000C2DE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30937837242E44CD000C2DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30937839242E44CD000C2DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3093783A242E44CD000C2DE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		309FFD49243044B900360B79 /* TAMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAMineViewController.h; sourceTree = "<group>"; };
+		309FFD4A243044B900360B79 /* TAMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAMineViewController.m; sourceTree = "<group>"; };
+		309FFD4E24305C9100360B79 /* TAPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAPrefixHeader.pch; sourceTree = "<group>"; };
+		309FFD4F24305E7C00360B79 /* TAFamilyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAFamilyViewController.h; sourceTree = "<group>"; };
+		309FFD5024305E7C00360B79 /* TAFamilyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAFamilyViewController.m; sourceTree = "<group>"; };
+		309FFD5224305F7D00360B79 /* TAAccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAAccountViewController.h; sourceTree = "<group>"; };
+		309FFD5324305F7D00360B79 /* TAAccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAAccountViewController.m; sourceTree = "<group>"; };
+		309FFD56243062D900360B79 /* TANavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TANavigationController.h; sourceTree = "<group>"; };
+		309FFD57243062D900360B79 /* TANavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TANavigationController.m; sourceTree = "<group>"; };
+		309FFD5B243068C200360B79 /* ta_kefu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ta_kefu@3x.png"; sourceTree = "<group>"; };
+		309FFD5C243068C200360B79 /* ta_setting@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ta_setting@3x.png"; sourceTree = "<group>"; };
+		309FFD5D243068C200360B79 /* ta_remind@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ta_remind@3x.png"; sourceTree = "<group>"; };
+		309FFD5E243068C200360B79 /* ta_logout@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ta_logout@3x.png"; sourceTree = "<group>"; };
+		309FFD5F243068C200360B79 /* ta_feedback@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ta_feedback@3x.png"; sourceTree = "<group>"; };
+		309FFD60243068C200360B79 /* ta_message@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ta_message@3x.png"; sourceTree = "<group>"; };
+		309FFD61243068C200360B79 /* ta_about@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ta_about@3x.png"; sourceTree = "<group>"; };
+		309FFD62243068C200360B79 /* ta_cache@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ta_cache@3x.png"; sourceTree = "<group>"; };
+		309FFD6B2430690000360B79 /* TAMineCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAMineCell.h; sourceTree = "<group>"; };
+		309FFD6C2430690000360B79 /* TAMineCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAMineCell.m; sourceTree = "<group>"; };
+		309FFD6D2430690000360B79 /* TAMineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAMineCell.xib; sourceTree = "<group>"; };
+		309FFD702430693500360B79 /* TAMineHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAMineHeadView.h; sourceTree = "<group>"; };
+		309FFD712430693500360B79 /* TAMineHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAMineHeadView.m; sourceTree = "<group>"; };
+		309FFD732430694500360B79 /* TAMineHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAMineHeadView.xib; sourceTree = "<group>"; };
+		309FFD7524306A5B00360B79 /* taappicon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taappicon@3x.png"; sourceTree = "<group>"; };
+		309FFD782430719500360B79 /* TAFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAFeedViewController.h; sourceTree = "<group>"; };
+		309FFD792430719500360B79 /* TAFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAFeedViewController.m; sourceTree = "<group>"; };
+		309FFD7A2430719500360B79 /* TAFeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAFeedViewController.xib; sourceTree = "<group>"; };
+		309FFD7F2430760800360B79 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		309FFD802430760800360B79 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		309FFD812430760800360B79 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		309FFD822430760800360B79 /* MBProgressHUD+NJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+NJ.m"; sourceTree = "<group>"; };
+		309FFD832430760800360B79 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		309FFD842430760800360B79 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		309FFD852430760800360B79 /* MBProgressHUD+NJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+NJ.h"; sourceTree = "<group>"; };
+		309FFD862430760800360B79 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		309FFD872430760800360B79 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		309FFD882430760800360B79 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		309FFD8F2430778800360B79 /* TAAboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAAboutViewController.h; sourceTree = "<group>"; };
+		309FFD902430778800360B79 /* TAAboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAAboutViewController.m; sourceTree = "<group>"; };
+		309FFD912430778800360B79 /* TAAboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAAboutViewController.xib; sourceTree = "<group>"; };
+		309FFD9724307A4300360B79 /* TALoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TALoginViewController.h; sourceTree = "<group>"; };
+		309FFD9824307A4300360B79 /* TALoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TALoginViewController.m; sourceTree = "<group>"; };
+		309FFD9924307A4300360B79 /* TALoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TALoginViewController.xib; sourceTree = "<group>"; };
+		309FFD9C24307F7400360B79 /* TATextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TATextField.h; sourceTree = "<group>"; };
+		309FFD9D24307F7400360B79 /* TATextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TATextField.m; sourceTree = "<group>"; };
+		309FFD9F24307FCA00360B79 /* login_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_background.png; sourceTree = "<group>"; };
+		309FFDA1243081A600360B79 /* TARegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TARegisterViewController.h; sourceTree = "<group>"; };
+		309FFDA2243081A600360B79 /* TARegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TARegisterViewController.m; sourceTree = "<group>"; };
+		309FFDA3243081A600360B79 /* TARegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TARegisterViewController.xib; sourceTree = "<group>"; };
+		309FFDA6243086EF00360B79 /* TAPrivacyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAPrivacyViewController.h; sourceTree = "<group>"; };
+		309FFDA7243086EF00360B79 /* TAPrivacyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAPrivacyViewController.m; sourceTree = "<group>"; };
+		309FFDA8243086EF00360B79 /* TAPrivacyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAPrivacyViewController.xib; sourceTree = "<group>"; };
+		309FFDAB2430882200360B79 /* ta_close_button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ta_close_button@3x.png"; sourceTree = "<group>"; };
+		31ED5BF15244A6C185EFEDD8 /* Pods-takahina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takahina.release.xcconfig"; path = "Target Support Files/Pods-takahina/Pods-takahina.release.xcconfig"; sourceTree = "<group>"; };
+		7C32AF134ED2362E23B6F5D6 /* libPods-takahina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-takahina.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C75BA4C53F7D6D74FCAEA729 /* Pods-takahina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takahina.debug.xcconfig"; path = "Target Support Files/Pods-takahina/Pods-takahina.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3093781F242E44CB000C2DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6002BA4411B7418F491A96E3 /* libPods-takahina.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30937819242E44CB000C2DE4 = {
+			isa = PBXGroup;
+			children = (
+				30937824242E44CB000C2DE4 /* takahina */,
+				30937823242E44CB000C2DE4 /* Products */,
+				5CEF3D881C7793F21D6FD85D /* Pods */,
+				D25452E6FCFDC4DDEB792A3C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		30937823242E44CB000C2DE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30937822242E44CB000C2DE4 /* takahina.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30937824242E44CB000C2DE4 /* takahina */ = {
+			isa = PBXGroup;
+			children = (
+				309FFD48243044A500360B79 /* 我的 */,
+				309FFD9424307A3400360B79 /* 登录 */,
+				309FFD7D243075E400360B79 /* 工具 */,
+				309FFD4E24305C9100360B79 /* TAPrefixHeader.pch */,
+				309FFD7524306A5B00360B79 /* taappicon@3x.png */,
+				30937831242E44CB000C2DE4 /* Main.storyboard */,
+				309FFD55243062A800360B79 /* 导航 */,
+				3093783A242E44CD000C2DE4 /* main.m */,
+				30937839242E44CD000C2DE4 /* Info.plist */,
+				30937834242E44CD000C2DE4 /* Assets.xcassets */,
+				30937836242E44CD000C2DE4 /* LaunchScreen.storyboard */,
+				309FFD4D24304ED400360B79 /* 家人 */,
+				309FFD4C24304ED400360B79 /* 账号 */,
+				30937825242E44CB000C2DE4 /* AppDelegate.h */,
+				30937826242E44CB000C2DE4 /* AppDelegate.m */,
+				30937828242E44CB000C2DE4 /* SceneDelegate.h */,
+				30937829242E44CB000C2DE4 /* SceneDelegate.m */,
+				3093782E242E44CB000C2DE4 /* SecondViewController.h */,
+				3093782F242E44CB000C2DE4 /* SecondViewController.m */,
+			);
+			path = takahina;
+			sourceTree = "<group>";
+		};
+		309FFD48243044A500360B79 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				309FFD8E2430775D00360B79 /* 关于我们 */,
+				309FFD772430715D00360B79 /* 反馈意见 */,
+				309FFD592430686400360B79 /* TA_MineTable */,
+				309FFD49243044B900360B79 /* TAMineViewController.h */,
+				309FFD4A243044B900360B79 /* TAMineViewController.m */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		309FFD4C24304ED400360B79 /* 账号 */ = {
+			isa = PBXGroup;
+			children = (
+				309FFD5224305F7D00360B79 /* TAAccountViewController.h */,
+				309FFD5324305F7D00360B79 /* TAAccountViewController.m */,
+			);
+			path = "账号";
+			sourceTree = "<group>";
+		};
+		309FFD4D24304ED400360B79 /* 家人 */ = {
+			isa = PBXGroup;
+			children = (
+				309FFD4F24305E7C00360B79 /* TAFamilyViewController.h */,
+				309FFD5024305E7C00360B79 /* TAFamilyViewController.m */,
+			);
+			path = "家人";
+			sourceTree = "<group>";
+		};
+		309FFD55243062A800360B79 /* 导航 */ = {
+			isa = PBXGroup;
+			children = (
+				309FFD56243062D900360B79 /* TANavigationController.h */,
+				309FFD57243062D900360B79 /* TANavigationController.m */,
+			);
+			path = "导航";
+			sourceTree = "<group>";
+		};
+		309FFD592430686400360B79 /* TA_MineTable */ = {
+			isa = PBXGroup;
+			children = (
+				309FFD5A243068C200360B79 /* TA_Images */,
+				309FFD6B2430690000360B79 /* TAMineCell.h */,
+				309FFD6C2430690000360B79 /* TAMineCell.m */,
+				309FFD6D2430690000360B79 /* TAMineCell.xib */,
+				309FFD702430693500360B79 /* TAMineHeadView.h */,
+				309FFD712430693500360B79 /* TAMineHeadView.m */,
+				309FFD732430694500360B79 /* TAMineHeadView.xib */,
+			);
+			path = TA_MineTable;
+			sourceTree = "<group>";
+		};
+		309FFD5A243068C200360B79 /* TA_Images */ = {
+			isa = PBXGroup;
+			children = (
+				309FFD5B243068C200360B79 /* ta_kefu@3x.png */,
+				309FFD5C243068C200360B79 /* ta_setting@3x.png */,
+				309FFD5D243068C200360B79 /* ta_remind@3x.png */,
+				309FFD5E243068C200360B79 /* ta_logout@3x.png */,
+				309FFD5F243068C200360B79 /* ta_feedback@3x.png */,
+				309FFD60243068C200360B79 /* ta_message@3x.png */,
+				309FFD61243068C200360B79 /* ta_about@3x.png */,
+				309FFD62243068C200360B79 /* ta_cache@3x.png */,
+			);
+			path = TA_Images;
+			sourceTree = "<group>";
+		};
+		309FFD772430715D00360B79 /* 反馈意见 */ = {
+			isa = PBXGroup;
+			children = (
+				309FFD782430719500360B79 /* TAFeedViewController.h */,
+				309FFD792430719500360B79 /* TAFeedViewController.m */,
+				309FFD7A2430719500360B79 /* TAFeedViewController.xib */,
+			);
+			path = "反馈意见";
+			sourceTree = "<group>";
+		};
+		309FFD7D243075E400360B79 /* 工具 */ = {
+			isa = PBXGroup;
+			children = (
+				309FFD7E2430760800360B79 /* SVProgressHUD */,
+			);
+			path = "工具";
+			sourceTree = "<group>";
+		};
+		309FFD7E2430760800360B79 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				309FFD7F2430760800360B79 /* SVRadialGradientLayer.m */,
+				309FFD802430760800360B79 /* SVIndefiniteAnimatedView.h */,
+				309FFD812430760800360B79 /* SVProgressHUD.h */,
+				309FFD822430760800360B79 /* MBProgressHUD+NJ.m */,
+				309FFD832430760800360B79 /* SVProgressHUD-Prefix.pch */,
+				309FFD842430760800360B79 /* SVRadialGradientLayer.h */,
+				309FFD852430760800360B79 /* MBProgressHUD+NJ.h */,
+				309FFD862430760800360B79 /* SVProgressHUD.m */,
+				309FFD872430760800360B79 /* SVIndefiniteAnimatedView.m */,
+				309FFD882430760800360B79 /* SVProgressHUD.bundle */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		309FFD8E2430775D00360B79 /* 关于我们 */ = {
+			isa = PBXGroup;
+			children = (
+				309FFD8F2430778800360B79 /* TAAboutViewController.h */,
+				309FFD902430778800360B79 /* TAAboutViewController.m */,
+				309FFD912430778800360B79 /* TAAboutViewController.xib */,
+			);
+			path = "关于我们";
+			sourceTree = "<group>";
+		};
+		309FFD9424307A3400360B79 /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				309FFD9F24307FCA00360B79 /* login_background.png */,
+				309FFD9524307A3400360B79 /* 注册页面 */,
+				309FFD9624307A3400360B79 /* 隐私条款 */,
+				309FFD9724307A4300360B79 /* TALoginViewController.h */,
+				309FFD9824307A4300360B79 /* TALoginViewController.m */,
+				309FFD9924307A4300360B79 /* TALoginViewController.xib */,
+				309FFD9C24307F7400360B79 /* TATextField.h */,
+				309FFD9D24307F7400360B79 /* TATextField.m */,
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
+		309FFD9524307A3400360B79 /* 注册页面 */ = {
+			isa = PBXGroup;
+			children = (
+				309FFDA1243081A600360B79 /* TARegisterViewController.h */,
+				309FFDA2243081A600360B79 /* TARegisterViewController.m */,
+				309FFDA3243081A600360B79 /* TARegisterViewController.xib */,
+			);
+			path = "注册页面";
+			sourceTree = "<group>";
+		};
+		309FFD9624307A3400360B79 /* 隐私条款 */ = {
+			isa = PBXGroup;
+			children = (
+				309FFDAB2430882200360B79 /* ta_close_button@3x.png */,
+				309FFDA6243086EF00360B79 /* TAPrivacyViewController.h */,
+				309FFDA7243086EF00360B79 /* TAPrivacyViewController.m */,
+				309FFDA8243086EF00360B79 /* TAPrivacyViewController.xib */,
+			);
+			path = "隐私条款";
+			sourceTree = "<group>";
+		};
+		5CEF3D881C7793F21D6FD85D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C75BA4C53F7D6D74FCAEA729 /* Pods-takahina.debug.xcconfig */,
+				31ED5BF15244A6C185EFEDD8 /* Pods-takahina.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D25452E6FCFDC4DDEB792A3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C32AF134ED2362E23B6F5D6 /* libPods-takahina.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30937821242E44CB000C2DE4 /* takahina */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3093783E242E44CD000C2DE4 /* Build configuration list for PBXNativeTarget "takahina" */;
+			buildPhases = (
+				5434F1D3944BC0B1F172D444 /* [CP] Check Pods Manifest.lock */,
+				3093781E242E44CB000C2DE4 /* Sources */,
+				3093781F242E44CB000C2DE4 /* Frameworks */,
+				30937820242E44CB000C2DE4 /* Resources */,
+				CA53AB510C3AFC27D33873DF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = takahina;
+			productName = takahina;
+			productReference = 30937822242E44CB000C2DE4 /* takahina.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3093781A242E44CB000C2DE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = beyond;
+				TargetAttributes = {
+					30937821242E44CB000C2DE4 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 3093781D242E44CB000C2DE4 /* Build configuration list for PBXProject "takahina" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30937819242E44CB000C2DE4;
+			productRefGroup = 30937823242E44CB000C2DE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30937821242E44CB000C2DE4 /* takahina */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30937820242E44CB000C2DE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30937838242E44CD000C2DE4 /* LaunchScreen.storyboard in Resources */,
+				309FFD7C2430719500360B79 /* TAFeedViewController.xib in Resources */,
+				309FFD6F2430690000360B79 /* TAMineCell.xib in Resources */,
+				309FFD67243068C200360B79 /* ta_feedback@3x.png in Resources */,
+				309FFD7624306A5B00360B79 /* taappicon@3x.png in Resources */,
+				309FFD66243068C200360B79 /* ta_logout@3x.png in Resources */,
+				309FFD68243068C200360B79 /* ta_message@3x.png in Resources */,
+				309FFD932430778800360B79 /* TAAboutViewController.xib in Resources */,
+				309FFD6A243068C200360B79 /* ta_cache@3x.png in Resources */,
+				309FFD9B24307A4300360B79 /* TALoginViewController.xib in Resources */,
+				309FFDA024307FCA00360B79 /* login_background.png in Resources */,
+				309FFD69243068C200360B79 /* ta_about@3x.png in Resources */,
+				309FFD742430694500360B79 /* TAMineHeadView.xib in Resources */,
+				309FFD64243068C200360B79 /* ta_setting@3x.png in Resources */,
+				309FFD8D2430760800360B79 /* SVProgressHUD.bundle in Resources */,
+				30937835242E44CD000C2DE4 /* Assets.xcassets in Resources */,
+				309FFD65243068C200360B79 /* ta_remind@3x.png in Resources */,
+				309FFDAA243086EF00360B79 /* TAPrivacyViewController.xib in Resources */,
+				30937833242E44CB000C2DE4 /* Main.storyboard in Resources */,
+				309FFDAC2430882200360B79 /* ta_close_button@3x.png in Resources */,
+				309FFDA5243081A600360B79 /* TARegisterViewController.xib in Resources */,
+				309FFD63243068C200360B79 /* ta_kefu@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5434F1D3944BC0B1F172D444 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-takahina-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA53AB510C3AFC27D33873DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-takahina/Pods-takahina-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-takahina/Pods-takahina-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-takahina/Pods-takahina-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3093781E242E44CB000C2DE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309FFDA4243081A600360B79 /* TARegisterViewController.m in Sources */,
+				3093783B242E44CD000C2DE4 /* main.m in Sources */,
+				309FFD922430778800360B79 /* TAAboutViewController.m in Sources */,
+				30937830242E44CB000C2DE4 /* SecondViewController.m in Sources */,
+				309FFD722430693500360B79 /* TAMineHeadView.m in Sources */,
+				309FFD8B2430760800360B79 /* SVProgressHUD.m in Sources */,
+				309FFD5424305F7D00360B79 /* TAAccountViewController.m in Sources */,
+				309FFD9E24307F7400360B79 /* TATextField.m in Sources */,
+				309FFD8C2430760800360B79 /* SVIndefiniteAnimatedView.m in Sources */,
+				309FFD4B243044B900360B79 /* TAMineViewController.m in Sources */,
+				309FFDA9243086EF00360B79 /* TAPrivacyViewController.m in Sources */,
+				309FFD8A2430760800360B79 /* MBProgressHUD+NJ.m in Sources */,
+				309FFD58243062D900360B79 /* TANavigationController.m in Sources */,
+				30937827242E44CB000C2DE4 /* AppDelegate.m in Sources */,
+				309FFD9A24307A4300360B79 /* TALoginViewController.m in Sources */,
+				309FFD892430760800360B79 /* SVRadialGradientLayer.m in Sources */,
+				309FFD6E2430690000360B79 /* TAMineCell.m in Sources */,
+				3093782A242E44CB000C2DE4 /* SceneDelegate.m in Sources */,
+				309FFD7B2430719500360B79 /* TAFeedViewController.m in Sources */,
+				309FFD5124305E7C00360B79 /* TAFamilyViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		30937831242E44CB000C2DE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30937832242E44CB000C2DE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30937836242E44CD000C2DE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30937837242E44CD000C2DE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3093783C242E44CD000C2DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3093783D242E44CD000C2DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3093783F242E44CD000C2DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C75BA4C53F7D6D74FCAEA729 /* Pods-takahina.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = N7NJC6YLRV;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/takahina/TAPrefixHeader.pch";
+				INFOPLIST_FILE = takahina/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.vwhm.shinchan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = net_vwhm_shinchan_dev_20200312;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		30937840242E44CD000C2DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31ED5BF15244A6C185EFEDD8 /* Pods-takahina.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = N7NJC6YLRV;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/takahina/TAPrefixHeader.pch";
+				INFOPLIST_FILE = takahina/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.vwhm.shinchan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = net_vwhm_shinchan_dev_20200312;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3093781D242E44CB000C2DE4 /* Build configuration list for PBXProject "takahina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3093783C242E44CD000C2DE4 /* Debug */,
+				3093783D242E44CD000C2DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3093783E242E44CD000C2DE4 /* Build configuration list for PBXNativeTarget "takahina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3093783F242E44CD000C2DE4 /* Debug */,
+				30937840242E44CD000C2DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3093781A242E44CB000C2DE4 /* Project object */;
+}
