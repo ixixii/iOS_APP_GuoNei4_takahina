@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TAFamilyViewController : UIViewController
 @property (nonatomic,weak) IBOutlet UITabBarItem *ta_xib_tabBarItem;
+
+- (IBAction)addTAButtonClicked:(UIButton *)sender;
 @end
 
 NS_ASSUME_NONNULL_END

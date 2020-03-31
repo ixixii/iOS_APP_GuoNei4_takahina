@@ -7,6 +7,7 @@
 //
 
 #import "TARegisterViewController.h"
+#import "MBProgressHUD+NJ.h"
 
 @interface TARegisterViewController ()
 

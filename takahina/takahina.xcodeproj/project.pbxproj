@@ -49,6 +49,23 @@
 		309FFDA9243086EF00360B79 /* TAPrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFDA7243086EF00360B79 /* TAPrivacyViewController.m */; };
 		309FFDAA243086EF00360B79 /* TAPrivacyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309FFDA8243086EF00360B79 /* TAPrivacyViewController.xib */; };
 		309FFDAC2430882200360B79 /* ta_close_button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309FFDAB2430882200360B79 /* ta_close_button@3x.png */; };
+		309FFDAE24308CD000360B79 /* ta_navi_add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309FFDAD24308CD000360B79 /* ta_navi_add@3x.png */; };
+		309FFDB22430A33900360B79 /* TAFamilyHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFDB12430A33900360B79 /* TAFamilyHeadView.m */; };
+		309FFDB42430A35300360B79 /* TAFamilyHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309FFDB32430A35300360B79 /* TAFamilyHeadView.xib */; };
+		309FFDB72430A3CE00360B79 /* ta_family_banner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 309FFDB52430A3CE00360B79 /* ta_family_banner.jpg */; };
+		309FFDB82430A3CE00360B79 /* ta_button_trash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309FFDB62430A3CE00360B79 /* ta_button_trash@3x.png */; };
+		309FFDBC2430A5C300360B79 /* TAFamilyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFDBA2430A5C300360B79 /* TAFamilyTableViewCell.m */; };
+		309FFDBD2430A5C300360B79 /* TAFamilyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309FFDBB2430A5C300360B79 /* TAFamilyTableViewCell.xib */; };
+		309FFDC22430FB2100360B79 /* TAAddFamilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFDC02430FB2100360B79 /* TAAddFamilyViewController.m */; };
+		309FFDC32430FB2100360B79 /* TAAddFamilyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309FFDC12430FB2100360B79 /* TAAddFamilyViewController.xib */; };
+		309FFDC62431062100360B79 /* balance_banner4.png in Resources */ = {isa = PBXBuildFile; fileRef = 309FFDC52431062100360B79 /* balance_banner4.png */; };
+		309FFDCA243106D500360B79 /* TAAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFDC8243106D500360B79 /* TAAccountTableViewCell.m */; };
+		309FFDCB243106D500360B79 /* TAAccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309FFDC9243106D500360B79 /* TAAccountTableViewCell.xib */; };
+		309FFDD02431597700360B79 /* TAAddAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFDCE2431597700360B79 /* TAAddAccountViewController.m */; };
+		309FFDD12431597700360B79 /* TAAddAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309FFDCF2431597700360B79 /* TAAddAccountViewController.xib */; };
+		309FFDD3243159A200360B79 /* ta_arrow_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309FFDD2243159A200360B79 /* ta_arrow_right@3x.png */; };
+		309FFDD7243160C500360B79 /* CZPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFDD5243160C500360B79 /* CZPickerView.m */; };
+		309FFDDB2431667600360B79 /* SomeoneAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFDDA2431667600360B79 /* SomeoneAccountViewController.m */; };
 		6002BA4411B7418F491A96E3 /* libPods-takahina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C32AF134ED2362E23B6F5D6 /* libPods-takahina.a */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +135,30 @@
 		309FFDA7243086EF00360B79 /* TAPrivacyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAPrivacyViewController.m; sourceTree = "<group>"; };
 		309FFDA8243086EF00360B79 /* TAPrivacyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAPrivacyViewController.xib; sourceTree = "<group>"; };
 		309FFDAB2430882200360B79 /* ta_close_button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ta_close_button@3x.png"; sourceTree = "<group>"; };
+		309FFDAD24308CD000360B79 /* ta_navi_add@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ta_navi_add@3x.png"; sourceTree = "<group>"; };
+		309FFDB02430A33900360B79 /* TAFamilyHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAFamilyHeadView.h; sourceTree = "<group>"; };
+		309FFDB12430A33900360B79 /* TAFamilyHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAFamilyHeadView.m; sourceTree = "<group>"; };
+		309FFDB32430A35300360B79 /* TAFamilyHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAFamilyHeadView.xib; sourceTree = "<group>"; };
+		309FFDB52430A3CE00360B79 /* ta_family_banner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ta_family_banner.jpg; sourceTree = "<group>"; };
+		309FFDB62430A3CE00360B79 /* ta_button_trash@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ta_button_trash@3x.png"; sourceTree = "<group>"; };
+		309FFDB92430A5C300360B79 /* TAFamilyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAFamilyTableViewCell.h; sourceTree = "<group>"; };
+		309FFDBA2430A5C300360B79 /* TAFamilyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAFamilyTableViewCell.m; sourceTree = "<group>"; };
+		309FFDBB2430A5C300360B79 /* TAFamilyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAFamilyTableViewCell.xib; sourceTree = "<group>"; };
+		309FFDBF2430FB2100360B79 /* TAAddFamilyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAAddFamilyViewController.h; sourceTree = "<group>"; };
+		309FFDC02430FB2100360B79 /* TAAddFamilyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAAddFamilyViewController.m; sourceTree = "<group>"; };
+		309FFDC12430FB2100360B79 /* TAAddFamilyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAAddFamilyViewController.xib; sourceTree = "<group>"; };
+		309FFDC52431062100360B79 /* balance_banner4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balance_banner4.png; sourceTree = "<group>"; };
+		309FFDC7243106D500360B79 /* TAAccountTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAAccountTableViewCell.h; sourceTree = "<group>"; };
+		309FFDC8243106D500360B79 /* TAAccountTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAAccountTableViewCell.m; sourceTree = "<group>"; };
+		309FFDC9243106D500360B79 /* TAAccountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAAccountTableViewCell.xib; sourceTree = "<group>"; };
+		309FFDCD2431597700360B79 /* TAAddAccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAAddAccountViewController.h; sourceTree = "<group>"; };
+		309FFDCE2431597700360B79 /* TAAddAccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAAddAccountViewController.m; sourceTree = "<group>"; };
+		309FFDCF2431597700360B79 /* TAAddAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAAddAccountViewController.xib; sourceTree = "<group>"; };
+		309FFDD2243159A200360B79 /* ta_arrow_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ta_arrow_right@3x.png"; sourceTree = "<group>"; };
+		309FFDD5243160C500360B79 /* CZPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZPickerView.m; sourceTree = "<group>"; };
+		309FFDD6243160C500360B79 /* CZPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZPickerView.h; sourceTree = "<group>"; };
+		309FFDD92431667600360B79 /* SomeoneAccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeoneAccountViewController.h; sourceTree = "<group>"; };
+		309FFDDA2431667600360B79 /* SomeoneAccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeoneAccountViewController.m; sourceTree = "<group>"; };
 		31ED5BF15244A6C185EFEDD8 /* Pods-takahina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takahina.release.xcconfig"; path = "Target Support Files/Pods-takahina/Pods-takahina.release.xcconfig"; sourceTree = "<group>"; };
 		7C32AF134ED2362E23B6F5D6 /* libPods-takahina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-takahina.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75BA4C53F7D6D74FCAEA729 /* Pods-takahina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takahina.debug.xcconfig"; path = "Target Support Files/Pods-takahina/Pods-takahina.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,19 +197,19 @@
 		30937824242E44CB000C2DE4 /* takahina */ = {
 			isa = PBXGroup;
 			children = (
+				30937831242E44CB000C2DE4 /* Main.storyboard */,
+				309FFD4C24304ED400360B79 /* 账号 */,
 				309FFD48243044A500360B79 /* 我的 */,
 				309FFD9424307A3400360B79 /* 登录 */,
 				309FFD7D243075E400360B79 /* 工具 */,
 				309FFD4E24305C9100360B79 /* TAPrefixHeader.pch */,
 				309FFD7524306A5B00360B79 /* taappicon@3x.png */,
-				30937831242E44CB000C2DE4 /* Main.storyboard */,
 				309FFD55243062A800360B79 /* 导航 */,
 				3093783A242E44CD000C2DE4 /* main.m */,
 				30937839242E44CD000C2DE4 /* Info.plist */,
 				30937834242E44CD000C2DE4 /* Assets.xcassets */,
 				30937836242E44CD000C2DE4 /* LaunchScreen.storyboard */,
 				309FFD4D24304ED400360B79 /* 家人 */,
-				309FFD4C24304ED400360B79 /* 账号 */,
 				30937825242E44CB000C2DE4 /* AppDelegate.h */,
 				30937826242E44CB000C2DE4 /* AppDelegate.m */,
 				30937828242E44CB000C2DE4 /* SceneDelegate.h */,
@@ -194,6 +235,9 @@
 		309FFD4C24304ED400360B79 /* 账号 */ = {
 			isa = PBXGroup;
 			children = (
+				309FFDD82431666700360B79 /* 某人账号 */,
+				309FFDCC2431596700360B79 /* 新增账号 */,
+				309FFDC42431062100360B79 /* ta_account_table */,
 				309FFD5224305F7D00360B79 /* TAAccountViewController.h */,
 				309FFD5324305F7D00360B79 /* TAAccountViewController.m */,
 			);
@@ -203,6 +247,8 @@
 		309FFD4D24304ED400360B79 /* 家人 */ = {
 			isa = PBXGroup;
 			children = (
+				309FFDBE2430FB0400360B79 /* 添加家人 */,
+				309FFDAF2430A07800360B79 /* TA_FamilyTable */,
 				309FFD4F24305E7C00360B79 /* TAFamilyViewController.h */,
 				309FFD5024305E7C00360B79 /* TAFamilyViewController.m */,
 			);
@@ -212,6 +258,7 @@
 		309FFD55243062A800360B79 /* 导航 */ = {
 			isa = PBXGroup;
 			children = (
+				309FFDAD24308CD000360B79 /* ta_navi_add@3x.png */,
 				309FFD56243062D900360B79 /* TANavigationController.h */,
 				309FFD57243062D900360B79 /* TANavigationController.m */,
 			);
@@ -260,6 +307,7 @@
 		309FFD7D243075E400360B79 /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
+				309FFDD4243160C500360B79 /* PickerView */,
 				309FFD7E2430760800360B79 /* SVProgressHUD */,
 			);
 			path = "工具";
@@ -326,6 +374,71 @@
 				309FFDA8243086EF00360B79 /* TAPrivacyViewController.xib */,
 			);
 			path = "隐私条款";
+			sourceTree = "<group>";
+		};
+		309FFDAF2430A07800360B79 /* TA_FamilyTable */ = {
+			isa = PBXGroup;
+			children = (
+				309FFDB62430A3CE00360B79 /* ta_button_trash@3x.png */,
+				309FFDB52430A3CE00360B79 /* ta_family_banner.jpg */,
+				309FFDB02430A33900360B79 /* TAFamilyHeadView.h */,
+				309FFDB92430A5C300360B79 /* TAFamilyTableViewCell.h */,
+				309FFDBA2430A5C300360B79 /* TAFamilyTableViewCell.m */,
+				309FFDBB2430A5C300360B79 /* TAFamilyTableViewCell.xib */,
+				309FFDB12430A33900360B79 /* TAFamilyHeadView.m */,
+				309FFDB32430A35300360B79 /* TAFamilyHeadView.xib */,
+			);
+			path = TA_FamilyTable;
+			sourceTree = "<group>";
+		};
+		309FFDBE2430FB0400360B79 /* 添加家人 */ = {
+			isa = PBXGroup;
+			children = (
+				309FFDBF2430FB2100360B79 /* TAAddFamilyViewController.h */,
+				309FFDC02430FB2100360B79 /* TAAddFamilyViewController.m */,
+				309FFDC12430FB2100360B79 /* TAAddFamilyViewController.xib */,
+			);
+			path = "添加家人";
+			sourceTree = "<group>";
+		};
+		309FFDC42431062100360B79 /* ta_account_table */ = {
+			isa = PBXGroup;
+			children = (
+				309FFDC52431062100360B79 /* balance_banner4.png */,
+				309FFDC7243106D500360B79 /* TAAccountTableViewCell.h */,
+				309FFDC8243106D500360B79 /* TAAccountTableViewCell.m */,
+				309FFDC9243106D500360B79 /* TAAccountTableViewCell.xib */,
+			);
+			path = ta_account_table;
+			sourceTree = "<group>";
+		};
+		309FFDCC2431596700360B79 /* 新增账号 */ = {
+			isa = PBXGroup;
+			children = (
+				309FFDD2243159A200360B79 /* ta_arrow_right@3x.png */,
+				309FFDCD2431597700360B79 /* TAAddAccountViewController.h */,
+				309FFDCE2431597700360B79 /* TAAddAccountViewController.m */,
+				309FFDCF2431597700360B79 /* TAAddAccountViewController.xib */,
+			);
+			path = "新增账号";
+			sourceTree = "<group>";
+		};
+		309FFDD4243160C500360B79 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				309FFDD5243160C500360B79 /* CZPickerView.m */,
+				309FFDD6243160C500360B79 /* CZPickerView.h */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		309FFDD82431666700360B79 /* 某人账号 */ = {
+			isa = PBXGroup;
+			children = (
+				309FFDD92431667600360B79 /* SomeoneAccountViewController.h */,
+				309FFDDA2431667600360B79 /* SomeoneAccountViewController.m */,
+			);
+			path = "某人账号";
 			sourceTree = "<group>";
 		};
 		5CEF3D881C7793F21D6FD85D /* Pods */ = {
@@ -404,26 +517,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309FFDB72430A3CE00360B79 /* ta_family_banner.jpg in Resources */,
 				30937838242E44CD000C2DE4 /* LaunchScreen.storyboard in Resources */,
 				309FFD7C2430719500360B79 /* TAFeedViewController.xib in Resources */,
 				309FFD6F2430690000360B79 /* TAMineCell.xib in Resources */,
 				309FFD67243068C200360B79 /* ta_feedback@3x.png in Resources */,
+				309FFDC32430FB2100360B79 /* TAAddFamilyViewController.xib in Resources */,
+				309FFDAE24308CD000360B79 /* ta_navi_add@3x.png in Resources */,
 				309FFD7624306A5B00360B79 /* taappicon@3x.png in Resources */,
 				309FFD66243068C200360B79 /* ta_logout@3x.png in Resources */,
 				309FFD68243068C200360B79 /* ta_message@3x.png in Resources */,
+				309FFDCB243106D500360B79 /* TAAccountTableViewCell.xib in Resources */,
 				309FFD932430778800360B79 /* TAAboutViewController.xib in Resources */,
 				309FFD6A243068C200360B79 /* ta_cache@3x.png in Resources */,
 				309FFD9B24307A4300360B79 /* TALoginViewController.xib in Resources */,
 				309FFDA024307FCA00360B79 /* login_background.png in Resources */,
+				309FFDD3243159A200360B79 /* ta_arrow_right@3x.png in Resources */,
 				309FFD69243068C200360B79 /* ta_about@3x.png in Resources */,
 				309FFD742430694500360B79 /* TAMineHeadView.xib in Resources */,
+				309FFDD12431597700360B79 /* TAAddAccountViewController.xib in Resources */,
 				309FFD64243068C200360B79 /* ta_setting@3x.png in Resources */,
 				309FFD8D2430760800360B79 /* SVProgressHUD.bundle in Resources */,
+				309FFDC62431062100360B79 /* balance_banner4.png in Resources */,
+				309FFDBD2430A5C300360B79 /* TAFamilyTableViewCell.xib in Resources */,
 				30937835242E44CD000C2DE4 /* Assets.xcassets in Resources */,
+				309FFDB42430A35300360B79 /* TAFamilyHeadView.xib in Resources */,
 				309FFD65243068C200360B79 /* ta_remind@3x.png in Resources */,
 				309FFDAA243086EF00360B79 /* TAPrivacyViewController.xib in Resources */,
 				30937833242E44CB000C2DE4 /* Main.storyboard in Resources */,
 				309FFDAC2430882200360B79 /* ta_close_button@3x.png in Resources */,
+				309FFDB82430A3CE00360B79 /* ta_button_trash@3x.png in Resources */,
 				309FFDA5243081A600360B79 /* TARegisterViewController.xib in Resources */,
 				309FFD63243068C200360B79 /* ta_kefu@3x.png in Resources */,
 			);
@@ -481,15 +604,22 @@
 				309FFDA4243081A600360B79 /* TARegisterViewController.m in Sources */,
 				3093783B242E44CD000C2DE4 /* main.m in Sources */,
 				309FFD922430778800360B79 /* TAAboutViewController.m in Sources */,
+				309FFDC22430FB2100360B79 /* TAAddFamilyViewController.m in Sources */,
 				30937830242E44CB000C2DE4 /* SecondViewController.m in Sources */,
 				309FFD722430693500360B79 /* TAMineHeadView.m in Sources */,
 				309FFD8B2430760800360B79 /* SVProgressHUD.m in Sources */,
 				309FFD5424305F7D00360B79 /* TAAccountViewController.m in Sources */,
+				309FFDCA243106D500360B79 /* TAAccountTableViewCell.m in Sources */,
+				309FFDDB2431667600360B79 /* SomeoneAccountViewController.m in Sources */,
 				309FFD9E24307F7400360B79 /* TATextField.m in Sources */,
 				309FFD8C2430760800360B79 /* SVIndefiniteAnimatedView.m in Sources */,
 				309FFD4B243044B900360B79 /* TAMineViewController.m in Sources */,
+				309FFDD02431597700360B79 /* TAAddAccountViewController.m in Sources */,
+				309FFDBC2430A5C300360B79 /* TAFamilyTableViewCell.m in Sources */,
 				309FFDA9243086EF00360B79 /* TAPrivacyViewController.m in Sources */,
 				309FFD8A2430760800360B79 /* MBProgressHUD+NJ.m in Sources */,
+				309FFDB22430A33900360B79 /* TAFamilyHeadView.m in Sources */,
+				309FFDD7243160C500360B79 /* CZPickerView.m in Sources */,
 				309FFD58243062D900360B79 /* TANavigationController.m in Sources */,
 				30937827242E44CB000C2DE4 /* AppDelegate.m in Sources */,
 				309FFD9A24307A4300360B79 /* TALoginViewController.m in Sources */,
@@ -638,9 +768,10 @@
 			baseConfigurationReference = C75BA4C53F7D6D74FCAEA729 /* Pods-takahina.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = N7NJC6YLRV;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 36W6HX39MD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/takahina/TAPrefixHeader.pch";
 				INFOPLIST_FILE = takahina/Info.plist;
@@ -649,9 +780,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.vwhm.shinchan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beyond.takahina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = net_vwhm_shinchan_dev_20200312;
+				PROVISIONING_PROFILE_SPECIFIER = com.beyond.takahina.dis.20200329;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -661,9 +792,10 @@
 			baseConfigurationReference = 31ED5BF15244A6C185EFEDD8 /* Pods-takahina.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = N7NJC6YLRV;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 36W6HX39MD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/takahina/TAPrefixHeader.pch";
 				INFOPLIST_FILE = takahina/Info.plist;
@@ -672,9 +804,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.vwhm.shinchan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beyond.takahina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = net_vwhm_shinchan_dev_20200312;
+				PROVISIONING_PROFILE_SPECIFIER = com.beyond.takahina.dis.20200329;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

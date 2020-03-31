@@ -12,6 +12,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TAAddAccountViewController : UIViewController
 
+@property (nonatomic,weak) IBOutlet UITextField *xib_ta_textField_account;
+@property (nonatomic,weak) IBOutlet UITextField *xib_ta_textField_password;
+@property (nonatomic,weak) IBOutlet UITextField *xib_ta_textField_type;
+@property (nonatomic,weak) IBOutlet UITextField *xib_ta_textField_remark;
+@property (nonatomic,weak) IBOutlet UITextField *xib_ta_textField_date;
+@property (nonatomic,weak) IBOutlet UITextField *xib_ta_textField_family;
+
+- (IBAction)btnTAFamilyClicked:(UIButton *)sender;
+- (IBAction)addTABtnClicked:(UIButton *)sender;
+
+@property (nonatomic,strong) NSDictionary *model;
+
+@property (nonatomic,weak) IBOutlet UIButton *xib_ta_button_add;
+@property (nonatomic,weak) IBOutlet UIButton *xib_ta_button_family;
+@property (nonatomic,weak) IBOutlet UIImageView *xib_ta_imageView_arrow;
+
 @end
 
 NS_ASSUME_NONNULL_END

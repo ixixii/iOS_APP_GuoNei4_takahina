@@ -11,7 +11,6 @@
 @implementation TAMineHeadView
 + (instancetype)taMineHeadView
 {
-    NSArray *tmpArr = [[NSBundle mainBundle]loadNibNamed:@"TAMineHeadView" owner:nil options:nil];
-    return tmpArr[0];
+    return [[NSBundle mainBundle]loadNibNamed:@"TAMineHeadView" owner:nil options:nil][0];
 }
 @end

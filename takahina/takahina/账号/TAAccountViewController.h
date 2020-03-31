@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TAAccountViewController : UIViewController
 @property (nonatomic,weak) IBOutlet UITabBarItem *ta_xib_tabBarItem;
+- (IBAction)addTABtnClicked:(UIButton *)sender;
 @end
 
 NS_ASSUME_NONNULL_END

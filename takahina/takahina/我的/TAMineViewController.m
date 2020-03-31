@@ -9,6 +9,7 @@
 #import "TAMineViewController.h"
 #import "TAMineHeadView.h"
 #import "TAMineCell.h"
+#import "MBProgressHUD+NJ.h"
 
 @interface TAMineViewController ()
 <UITableViewDataSource, UITableViewDelegate>

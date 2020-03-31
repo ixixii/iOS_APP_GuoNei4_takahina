@@ -11,7 +11,14 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TAAccountTableViewCell : UITableViewCell
-
++ (instancetype)taTableViewCell;
+@property (nonatomic,weak) IBOutlet UILabel *xib_ta_label_account;
+@property (nonatomic,weak) IBOutlet UILabel *xib_ta_label_password;
+@property (nonatomic,weak) IBOutlet UILabel *xib_ta_label_type;
+@property (nonatomic,weak) IBOutlet UILabel *xib_ta_label_remark;
+@property (nonatomic,weak) IBOutlet UILabel *xib_ta_label_date;
+@property (nonatomic,weak) IBOutlet UILabel *xib_ta_label_family;
+@property (nonatomic,weak) IBOutlet UIButton *xib_ta_btn_del;
 @end
 
 NS_ASSUME_NONNULL_END

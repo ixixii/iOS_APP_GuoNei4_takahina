@@ -19,6 +19,6 @@
 #define ta_ScreenWidth ta_ScreenBounds.size.width
 #define ta_ScreenHeight ta_ScreenBounds.size.height
 
-#import "MBProgressHUD+NJ.h"
+
 
 #endif /* TAPrefixHeader_pch */

@@ -7,6 +7,7 @@
 //
 
 #import "TALoginViewController.h"
+#import "MBProgressHUD+NJ.h"
 
 @interface TALoginViewController ()
 

@@ -350,7 +350,7 @@ sudo vi /etc/hosts
 151.101.100.133 avatars6.githubusercontent.com
 151.101.100.133 avatars7.githubusercontent.com
 151.101.100.133 avatars8.githubusercontent.com
-
+式 　
 即可。
 
 关于hosts文件，其作用是包含IP地址和host name(主机名)的映射关系。windows系统下路径为C:\Windows\System32\drivers\etc\hosts，linux系统下为/etc/hosts，没有的话就自己创建一个记事本文件，再把格式后缀删掉，修改时以记事本方式打开即可。    
@@ -364,8 +364,17 @@ todo list 9: 尾声，上传项目源代码到git
 
 git init
 git add --all
-git commit -m 'iOS 国内区白包4 TAKAHINA-家庭账号管理 第一次提交'
+git commit -m 'iOS 国内区白包4 TAKAHINA-家庭账号管理 第一次提交(我的、登陆、注册版)'
+git commit -m 'iOS 国内区白包4 TAKAHINA-家庭账号管理 第2次提交(appstore版)'
 git remote add origin https://github.com/ixixii/iOS_APP_GuoNei2_stikers_shinchan.git
 git push -u origin master
 git push origin master
 --------------------------
+
+
+最新版本13.4 链接:https://pan.baidu.com/s/18i9QpOh7VxW3NKKGVNaMDw 密码:165t
+（8.0 —— 13.4版本合集）链接:https://pan.baidu.com/s/1EN2NWCXm0uL9DzzLfs60mA 密码:he1t
+
+下载好后，将解压后的文件夹放到Xcode路径:Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport
+
+

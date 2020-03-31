@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TAFamilyHeadView : UIView
-
+@property (nonatomic,weak) IBOutlet UIImageView *xib_ta_imgView_banner;
++ (instancetype)taFamilyHeadView;
 @end
 
 NS_ASSUME_NONNULL_END

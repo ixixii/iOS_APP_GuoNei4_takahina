@@ -7,6 +7,7 @@
 //
 
 #import "TAFeedViewController.h"
+#import "MBProgressHUD+NJ.h"
 
 @interface TAFeedViewController ()
 
