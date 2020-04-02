@@ -7,7 +7,6 @@
 //
 
 #import "TAAddFamilyViewController.h"
-#import "MBProgressHUD+NJ.h"
 @interface TAAddFamilyViewController ()
 
 @end
@@ -22,15 +21,15 @@
 - (void)addTAFamilyBtnClicked:(UIButton *)sender
 {
     if(_xib_ta_textField_relation.text.length == 0){
-        [MBProgressHUD showError:@"请输入家人关系"];
+        [TAMessageTool showTAMessage:@"请输入家人关系"];
         return;
     }
     if(_xib_ta_textField_interest.text.length == 0){
-        [MBProgressHUD showError:@"请输入账号热点"];
+        [TAMessageTool showTAMessage:@"请输入账号热点"];
         return;
     }
     if(_xib_ta_textField_description.text.length == 0){
-        [MBProgressHUD showError:@"请输入家人描述"];
+        [TAMessageTool showTAMessage:@"请输入家人描述"];
         return;
     }
     NSArray *taFamilyArr = [[NSUserDefaults standardUserDefaults] objectForKey:@"userDefault_ta_familyArr"];
@@ -43,12 +42,11 @@
     [mTAArr addObject:newTAFamily];
     [[NSUserDefaults standardUserDefaults] setObject:mTAArr forKey:@"userDefault_ta_familyArr"];
     [[NSUserDefaults standardUserDefaults] synchronize];
-    
-    [MBProgressHUD showMessage:@"发送中..."];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [MBProgressHUD hideHUD];
-        [MBProgressHUD showSuccess:@"添加成功"];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    [self.view endEditing:YES];
+    [TAMessageTool showTAMessage:@"发送中..." duration:3];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [TAMessageTool showTAMessage:@"添加成功" duration:3];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self.navigationController popViewControllerAnimated:YES];
         });
     });

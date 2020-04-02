@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		308DCC64243626E40007B7F5 /* TAMessageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 308DCC63243626E40007B7F5 /* TAMessageTool.m */; };
 		30937827242E44CB000C2DE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30937826242E44CB000C2DE4 /* AppDelegate.m */; };
 		3093782A242E44CB000C2DE4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30937829242E44CB000C2DE4 /* SceneDelegate.m */; };
 		30937830242E44CB000C2DE4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3093782F242E44CB000C2DE4 /* SecondViewController.m */; };
@@ -33,11 +34,6 @@
 		309FFD7624306A5B00360B79 /* taappicon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD7524306A5B00360B79 /* taappicon@3x.png */; };
 		309FFD7B2430719500360B79 /* TAFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD792430719500360B79 /* TAFeedViewController.m */; };
 		309FFD7C2430719500360B79 /* TAFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD7A2430719500360B79 /* TAFeedViewController.xib */; };
-		309FFD892430760800360B79 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD7F2430760800360B79 /* SVRadialGradientLayer.m */; };
-		309FFD8A2430760800360B79 /* MBProgressHUD+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD822430760800360B79 /* MBProgressHUD+NJ.m */; };
-		309FFD8B2430760800360B79 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD862430760800360B79 /* SVProgressHUD.m */; };
-		309FFD8C2430760800360B79 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD872430760800360B79 /* SVIndefiniteAnimatedView.m */; };
-		309FFD8D2430760800360B79 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD882430760800360B79 /* SVProgressHUD.bundle */; };
 		309FFD922430778800360B79 /* TAAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD902430778800360B79 /* TAAboutViewController.m */; };
 		309FFD932430778800360B79 /* TAAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309FFD912430778800360B79 /* TAAboutViewController.xib */; };
 		309FFD9A24307A4300360B79 /* TALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFD9824307A4300360B79 /* TALoginViewController.m */; };
@@ -64,12 +60,13 @@
 		309FFDD02431597700360B79 /* TAAddAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFDCE2431597700360B79 /* TAAddAccountViewController.m */; };
 		309FFDD12431597700360B79 /* TAAddAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309FFDCF2431597700360B79 /* TAAddAccountViewController.xib */; };
 		309FFDD3243159A200360B79 /* ta_arrow_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 309FFDD2243159A200360B79 /* ta_arrow_right@3x.png */; };
-		309FFDD7243160C500360B79 /* CZPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFDD5243160C500360B79 /* CZPickerView.m */; };
 		309FFDDB2431667600360B79 /* SomeoneAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309FFDDA2431667600360B79 /* SomeoneAccountViewController.m */; };
 		6002BA4411B7418F491A96E3 /* libPods-takahina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C32AF134ED2362E23B6F5D6 /* libPods-takahina.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		308DCC62243626E40007B7F5 /* TAMessageTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAMessageTool.h; sourceTree = "<group>"; };
+		308DCC63243626E40007B7F5 /* TAMessageTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAMessageTool.m; sourceTree = "<group>"; };
 		30937822242E44CB000C2DE4 /* takahina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = takahina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30937825242E44CB000C2DE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		30937826242E44CB000C2DE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,16 +106,6 @@
 		309FFD782430719500360B79 /* TAFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAFeedViewController.h; sourceTree = "<group>"; };
 		309FFD792430719500360B79 /* TAFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAFeedViewController.m; sourceTree = "<group>"; };
 		309FFD7A2430719500360B79 /* TAFeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAFeedViewController.xib; sourceTree = "<group>"; };
-		309FFD7F2430760800360B79 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		309FFD802430760800360B79 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		309FFD812430760800360B79 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		309FFD822430760800360B79 /* MBProgressHUD+NJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+NJ.m"; sourceTree = "<group>"; };
-		309FFD832430760800360B79 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
-		309FFD842430760800360B79 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
-		309FFD852430760800360B79 /* MBProgressHUD+NJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+NJ.h"; sourceTree = "<group>"; };
-		309FFD862430760800360B79 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
-		309FFD872430760800360B79 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		309FFD882430760800360B79 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		309FFD8F2430778800360B79 /* TAAboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAAboutViewController.h; sourceTree = "<group>"; };
 		309FFD902430778800360B79 /* TAAboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAAboutViewController.m; sourceTree = "<group>"; };
 		309FFD912430778800360B79 /* TAAboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAAboutViewController.xib; sourceTree = "<group>"; };
@@ -155,8 +142,6 @@
 		309FFDCE2431597700360B79 /* TAAddAccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAAddAccountViewController.m; sourceTree = "<group>"; };
 		309FFDCF2431597700360B79 /* TAAddAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAAddAccountViewController.xib; sourceTree = "<group>"; };
 		309FFDD2243159A200360B79 /* ta_arrow_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ta_arrow_right@3x.png"; sourceTree = "<group>"; };
-		309FFDD5243160C500360B79 /* CZPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZPickerView.m; sourceTree = "<group>"; };
-		309FFDD6243160C500360B79 /* CZPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZPickerView.h; sourceTree = "<group>"; };
 		309FFDD92431667600360B79 /* SomeoneAccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeoneAccountViewController.h; sourceTree = "<group>"; };
 		309FFDDA2431667600360B79 /* SomeoneAccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeoneAccountViewController.m; sourceTree = "<group>"; };
 		31ED5BF15244A6C185EFEDD8 /* Pods-takahina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takahina.release.xcconfig"; path = "Target Support Files/Pods-takahina/Pods-takahina.release.xcconfig"; sourceTree = "<group>"; };
@@ -197,12 +182,12 @@
 		30937824242E44CB000C2DE4 /* takahina */ = {
 			isa = PBXGroup;
 			children = (
+				309FFD4E24305C9100360B79 /* TAPrefixHeader.pch */,
 				30937831242E44CB000C2DE4 /* Main.storyboard */,
 				309FFD4C24304ED400360B79 /* 账号 */,
 				309FFD48243044A500360B79 /* 我的 */,
 				309FFD9424307A3400360B79 /* 登录 */,
 				309FFD7D243075E400360B79 /* 工具 */,
-				309FFD4E24305C9100360B79 /* TAPrefixHeader.pch */,
 				309FFD7524306A5B00360B79 /* taappicon@3x.png */,
 				309FFD55243062A800360B79 /* 导航 */,
 				3093783A242E44CD000C2DE4 /* main.m */,
@@ -307,27 +292,10 @@
 		309FFD7D243075E400360B79 /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
-				309FFDD4243160C500360B79 /* PickerView */,
-				309FFD7E2430760800360B79 /* SVProgressHUD */,
+				308DCC62243626E40007B7F5 /* TAMessageTool.h */,
+				308DCC63243626E40007B7F5 /* TAMessageTool.m */,
 			);
 			path = "工具";
-			sourceTree = "<group>";
-		};
-		309FFD7E2430760800360B79 /* SVProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				309FFD7F2430760800360B79 /* SVRadialGradientLayer.m */,
-				309FFD802430760800360B79 /* SVIndefiniteAnimatedView.h */,
-				309FFD812430760800360B79 /* SVProgressHUD.h */,
-				309FFD822430760800360B79 /* MBProgressHUD+NJ.m */,
-				309FFD832430760800360B79 /* SVProgressHUD-Prefix.pch */,
-				309FFD842430760800360B79 /* SVRadialGradientLayer.h */,
-				309FFD852430760800360B79 /* MBProgressHUD+NJ.h */,
-				309FFD862430760800360B79 /* SVProgressHUD.m */,
-				309FFD872430760800360B79 /* SVIndefiniteAnimatedView.m */,
-				309FFD882430760800360B79 /* SVProgressHUD.bundle */,
-			);
-			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		309FFD8E2430775D00360B79 /* 关于我们 */ = {
@@ -421,15 +389,6 @@
 				309FFDCF2431597700360B79 /* TAAddAccountViewController.xib */,
 			);
 			path = "新增账号";
-			sourceTree = "<group>";
-		};
-		309FFDD4243160C500360B79 /* PickerView */ = {
-			isa = PBXGroup;
-			children = (
-				309FFDD5243160C500360B79 /* CZPickerView.m */,
-				309FFDD6243160C500360B79 /* CZPickerView.h */,
-			);
-			path = PickerView;
 			sourceTree = "<group>";
 		};
 		309FFDD82431666700360B79 /* 某人账号 */ = {
@@ -537,7 +496,6 @@
 				309FFD742430694500360B79 /* TAMineHeadView.xib in Resources */,
 				309FFDD12431597700360B79 /* TAAddAccountViewController.xib in Resources */,
 				309FFD64243068C200360B79 /* ta_setting@3x.png in Resources */,
-				309FFD8D2430760800360B79 /* SVProgressHUD.bundle in Resources */,
 				309FFDC62431062100360B79 /* balance_banner4.png in Resources */,
 				309FFDBD2430A5C300360B79 /* TAFamilyTableViewCell.xib in Resources */,
 				30937835242E44CD000C2DE4 /* Assets.xcassets in Resources */,
@@ -607,23 +565,19 @@
 				309FFDC22430FB2100360B79 /* TAAddFamilyViewController.m in Sources */,
 				30937830242E44CB000C2DE4 /* SecondViewController.m in Sources */,
 				309FFD722430693500360B79 /* TAMineHeadView.m in Sources */,
-				309FFD8B2430760800360B79 /* SVProgressHUD.m in Sources */,
 				309FFD5424305F7D00360B79 /* TAAccountViewController.m in Sources */,
+				308DCC64243626E40007B7F5 /* TAMessageTool.m in Sources */,
 				309FFDCA243106D500360B79 /* TAAccountTableViewCell.m in Sources */,
 				309FFDDB2431667600360B79 /* SomeoneAccountViewController.m in Sources */,
 				309FFD9E24307F7400360B79 /* TATextField.m in Sources */,
-				309FFD8C2430760800360B79 /* SVIndefiniteAnimatedView.m in Sources */,
 				309FFD4B243044B900360B79 /* TAMineViewController.m in Sources */,
 				309FFDD02431597700360B79 /* TAAddAccountViewController.m in Sources */,
 				309FFDBC2430A5C300360B79 /* TAFamilyTableViewCell.m in Sources */,
 				309FFDA9243086EF00360B79 /* TAPrivacyViewController.m in Sources */,
-				309FFD8A2430760800360B79 /* MBProgressHUD+NJ.m in Sources */,
 				309FFDB22430A33900360B79 /* TAFamilyHeadView.m in Sources */,
-				309FFDD7243160C500360B79 /* CZPickerView.m in Sources */,
 				309FFD58243062D900360B79 /* TANavigationController.m in Sources */,
 				30937827242E44CB000C2DE4 /* AppDelegate.m in Sources */,
 				309FFD9A24307A4300360B79 /* TALoginViewController.m in Sources */,
-				309FFD892430760800360B79 /* SVRadialGradientLayer.m in Sources */,
 				309FFD6E2430690000360B79 /* TAMineCell.m in Sources */,
 				3093782A242E44CB000C2DE4 /* SceneDelegate.m in Sources */,
 				309FFD7B2430719500360B79 /* TAFeedViewController.m in Sources */,
@@ -770,7 +724,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 36W6HX39MD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/takahina/TAPrefixHeader.pch";
@@ -794,7 +748,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 36W6HX39MD;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/takahina/TAPrefixHeader.pch";

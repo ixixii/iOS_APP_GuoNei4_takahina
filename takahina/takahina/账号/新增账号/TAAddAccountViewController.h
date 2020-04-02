@@ -28,6 +28,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,weak) IBOutlet UIButton *xib_ta_button_family;
 @property (nonatomic,weak) IBOutlet UIImageView *xib_ta_imageView_arrow;
 
+@property (nonatomic,weak) IBOutlet UIButton *xib_ta_button_mask;
+@property (nonatomic,weak) IBOutlet UIPickerView *xib_ta_pickerView;
+- (IBAction)taButtonMaskClicked:(UIButton *)sender;
 @end
 
 NS_ASSUME_NONNULL_END

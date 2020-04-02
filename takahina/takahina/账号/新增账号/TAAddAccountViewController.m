@@ -7,10 +7,7 @@
 //
 
 #import "TAAddAccountViewController.h"
-#import "CZPickerView.h"
-#import "CXDatePickerView.h"
-#import "MBProgressHUD+NJ.h"
-@interface TAAddAccountViewController ()<CZPickerViewDelegate,CZPickerViewDataSource>
+@interface TAAddAccountViewController ()<UIPickerViewDataSource, UIPickerViewDelegate>
 {
     NSArray *_ta_familyArr;
 }
@@ -51,52 +48,58 @@
 - (void)btnTAFamilyClicked:(UIButton *)sender
 {
     [self.view endEditing:YES];
-    CZPickerView *pickerr = [[CZPickerView alloc] initWithHeaderTitle:@"请选择账号所属家人"
-                                                       cancelButtonTitle:@"取消"
-                                                      confirmButtonTitle:@"确定"];
-        pickerr.checkMarkNeedless = YES;
-        pickerr.delegate = self;
-        pickerr.dataSource = self;
-        pickerr.tapBackgroundToDismiss = YES;
-        [pickerr show];
+    _xib_ta_pickerView.hidden = NO;
+    _xib_ta_button_mask.hidden = NO;
 }
-#pragma mark - CZPickerView datasource 和 delegate
-- (NSInteger)numberOfRowsInPickerView:(CZPickerView *)pickerView
+#pragma mark - pickerView
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
     return _ta_familyArr.count;
 }
-- (NSString *)czpickerView:(CZPickerView *)pickerView titleForRow:(NSInteger)row
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
     return [_ta_familyArr[row] objectForKey:@"ta_relation"];
 }
-- (void)czpickerView:(CZPickerView *)pickerView
-didConfirmWithItemAtRow:(NSInteger)row
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     [pickerView setHidden:YES];
+    _xib_ta_button_mask.hidden = YES;
     _xib_ta_textField_family.text = [_ta_familyArr[row] objectForKey:@"ta_relation"];
 }
-
+- (void)taButtonMaskClicked:(UIButton *)sender
+{
+    sender.hidden = YES;
+    _xib_ta_pickerView.hidden = YES;
+}
 #pragma mark - btn 事件
 - (void)addTABtnClicked:(UIButton *)sender
 {
     if(_xib_ta_textField_account.text.length == 0){
-        [MBProgressHUD showError:@"账号不能为空"];
+        [TAMessageTool showTAMessage:@"账号不能为空"];
         return;
     }
     if(_xib_ta_textField_password.text.length == 0){
-        [MBProgressHUD showError:@"密码不能为空"];
+        [TAMessageTool showTAMessage:@"密码不能为空"];
         return;
     }
     if(_xib_ta_textField_type.text.length == 0){
-        [MBProgressHUD showError:@"账号类型不能为空"];
+        [TAMessageTool showTAMessage:@"账号类型不能为空"];
         return;
     }
     if(_xib_ta_textField_remark.text.length == 0){
-        [MBProgressHUD showError:@"描述不能为空"];
+        [TAMessageTool showTAMessage:@"描述不能为空"];
+        return;
+    }
+    if(_xib_ta_textField_date.text.length == 0){
+        [TAMessageTool showTAMessage:@"创建时间不能为空"];
         return;
     }
     if(_xib_ta_textField_family.text.length == 0){
-        [MBProgressHUD showError:@"所属家人不能为空"];
+        [TAMessageTool showTAMessage:@"所属家人不能为空"];
         return;
     }
     
@@ -117,13 +120,11 @@ didConfirmWithItemAtRow:(NSInteger)row
     [mTAArr addObject:newTAAccount];
     [[NSUserDefaults standardUserDefaults] setObject:mTAArr forKey:@"userDefault_ta_accountArr"];
     [[NSUserDefaults standardUserDefaults] synchronize];
-    
-    [MBProgressHUD showMessage:@"发送中..."];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [MBProgressHUD hideHUD];
-        [MBProgressHUD showSuccess:@"添加账号成功"];
-        
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    [self.view endEditing:YES];
+    [TAMessageTool showTAMessage:@"发送中..." duration:3];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [TAMessageTool showTAMessage:@"添加账号成功" duration:3];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self.navigationController popViewControllerAnimated:YES];
         });
     });

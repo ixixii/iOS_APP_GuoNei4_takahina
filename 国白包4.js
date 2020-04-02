@@ -366,7 +366,7 @@ git init
 git add --all
 git commit -m 'iOS 国内区白包4 TAKAHINA-家庭账号管理 第一次提交(我的、登陆、注册版)'
 git commit -m 'iOS 国内区白包4 TAKAHINA-家庭账号管理 第2次提交(appstore版)'
-git remote add origin https://github.com/ixixii/iOS_APP_GuoNei2_stikers_shinchan.git
+git remote add origin https://github.com/ixixii/iOS_APP_GuoNei4_takahina.git
 git push -u origin master
 git push origin master
 --------------------------
@@ -378,3 +378,49 @@ git push origin master
 下载好后，将解压后的文件夹放到Xcode路径:Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport
 
 
+
+===================
+移除第3方控件：
+1. MBProgressHUD
+2. CZPickerView
+3. CXDatePickerView
+
+取而代之的是：
+1. TAMessageTool
+2. UIPickerView
+3. UIDatePicker (这个暂时不加，依然手动输入)
+
+
++(void)showMessage:(NSString *)message duration:(NSInteger)duration;
+
+#pragma mark - 工具方法
++(void)showMessage:(NSString *)message duration:(NSInteger)duration
+{
+    UIWindow * window = [UIApplication sharedApplication].keyWindow;
+    UIView *showview =  [[UIView alloc]init];
+    showview.backgroundColor = [UIColor blackColor];
+    showview.frame = CGRectMake(1, 1, 1, 1);
+    showview.alpha = 1.0f;
+    showview.layer.cornerRadius = 5.0f;
+    showview.layer.masksToBounds = YES;
+    [window addSubview:showview];
+    
+    UILabel *label = [[UILabel alloc]init];
+    CGSize LabelSize = [message sizeWithFont:[UIFont systemFontOfSize:22] constrainedToSize:CGSizeMake(290, 9000)];
+    label.frame = CGRectMake(10, 5, LabelSize.width, LabelSize.height);
+    label.text = message;
+    label.numberOfLines = 0;
+    label.textColor = [UIColor whiteColor];
+    label.textAlignment = 1;
+    label.backgroundColor = [UIColor clearColor];
+    label.font = [UIFont boldSystemFontOfSize:20];
+    [showview addSubview:label];
+//    CGFloat SCREEN_WIDTH= window.frame.size.width;
+//    CGFloat SCREEN_HEIGHT= window.frame.size.height;
+    showview.frame = CGRectMake((SCREEN_WIDTH - LabelSize.width - 20)/2, SCREEN_HEIGHT - 100, LabelSize.width+20, LabelSize.height+10);
+    [UIView animateWithDuration:duration animations:^{
+        showview.alpha = 0;
+    } completion:^(BOOL finished) {
+        [showview removeFromSuperview];
+    }];
+}

@@ -7,7 +7,6 @@
 //
 
 #import "TARegisterViewController.h"
-#import "MBProgressHUD+NJ.h"
 
 @interface TARegisterViewController ()
 
@@ -30,21 +29,20 @@
 - (void)registerTAButtonClicked:(UIButton *)sender
 {
     if(_xib_ta_textField_telephone.text.length == 0){
-        [MBProgressHUD showError:@"手机号码不能为空"];
+        [TAMessageTool showTAMessage:@"手机号码不能为空"];
         return;
     }
     if(_xib_textField_ta_pwd.text.length == 0){
-        [MBProgressHUD showError:@"注册密码不能为空"];
+        [TAMessageTool showTAMessage:@"注册密码不能为空"];
         return;
     }
     [[NSUserDefaults standardUserDefaults] setObject:_xib_ta_textField_telephone.text forKey:@"userDefault_ta_telephone"];
     [[NSUserDefaults standardUserDefaults] setObject:_xib_textField_ta_pwd.text forKey:@"userDefault_ta_pwd"];
     [[NSUserDefaults standardUserDefaults] synchronize];
-    [MBProgressHUD showMessage:@"请求中..."];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [MBProgressHUD hideHUD];
-        [MBProgressHUD showSuccess:@"注册成功，请前往登录"];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    [TAMessageTool showTAMessage:@"发送中..." duration:3];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [TAMessageTool showTAMessage:@"注册成功，请前往登录" duration:3];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self dismissViewControllerAnimated:YES completion:nil];
         });
     });

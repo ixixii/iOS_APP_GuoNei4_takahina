@@ -9,7 +9,6 @@
 #import "TAMineViewController.h"
 #import "TAMineHeadView.h"
 #import "TAMineCell.h"
-#import "MBProgressHUD+NJ.h"
 
 @interface TAMineViewController ()
 <UITableViewDataSource, UITableViewDelegate>
@@ -130,12 +129,9 @@
                 UIAlertController *ta_alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"你是否退出登录？" preferredStyle:UIAlertControllerStyleAlert];
                 [ta_alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
                 [ta_alertController addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull act) {
-                    [MBProgressHUD showMessage:@"发送中..."];
-                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                        [MBProgressHUD hideHUD];
-                        [MBProgressHUD showSuccess:@"退出登录成功"];
-                        // 清除登陆状态
-                        // 根据用户上次选择的,展示
+                    [TAMessageTool showTAMessage:@"发送中..." duration:3];
+                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                        [TAMessageTool showTAMessage:@"退出登录成功"];
                         [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"userDefault_ta_isLogin"];
                         [[NSUserDefaults standardUserDefaults] synchronize];
                         

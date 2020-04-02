@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,9 @@
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="xib_ta_button_add" destination="ddn-BD-HYt" id="J1C-rC-JvS"/>
                 <outlet property="xib_ta_button_family" destination="lst-sh-ZPF" id="6pp-eY-jTg"/>
+                <outlet property="xib_ta_button_mask" destination="jRg-3P-y41" id="YmU-tZ-tOg"/>
                 <outlet property="xib_ta_imageView_arrow" destination="EfL-k8-rLO" id="WNi-Jq-8ha"/>
+                <outlet property="xib_ta_pickerView" destination="Haf-6n-JwR" id="Wda-ry-uqB"/>
                 <outlet property="xib_ta_textField_account" destination="ibP-3S-cPs" id="6Sf-jN-Mde"/>
                 <outlet property="xib_ta_textField_date" destination="igL-Mm-MJD" id="iHz-I2-oBe"/>
                 <outlet property="xib_ta_textField_family" destination="HgC-rA-cWr" id="JfF-It-kqj"/>
@@ -145,7 +147,7 @@
                         <constraint firstAttribute="height" constant="50" id="A9m-Td-idX"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8d-Z8-mqP">
                     <rect key="frame" x="10" y="320" width="355" height="50"/>
@@ -201,6 +203,25 @@
                         <action selector="btnTAFamilyClicked:" destination="-1" eventType="touchUpInside" id="bFT-wS-l91"/>
                     </connections>
                 </button>
+                <button hidden="YES" opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRg-3P-y41" userLabel="maskBtn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="taButtonMaskClicked:" destination="-1" eventType="touchUpInside" id="c0D-50-hMc"/>
+                    </connections>
+                </button>
+                <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Haf-6n-JwR">
+                    <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="216" id="YfT-Xn-D6s"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="aCQ-II-KCK"/>
+                        <outlet property="delegate" destination="-1" id="hjM-Qs-7pP"/>
+                    </connections>
+                </pickerView>
             </subviews>
             <color key="backgroundColor" red="0.92529696230000003" green="0.92955839630000003" blue="0.9252639413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -217,10 +238,12 @@
                 <constraint firstItem="De0-it-ZMp" firstAttribute="centerY" secondItem="Rlp-Pg-ppx" secondAttribute="centerY" id="6h7-6U-ZGG"/>
                 <constraint firstItem="ddn-BD-HYt" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="7Tt-iP-NlD"/>
                 <constraint firstItem="e05-Xy-NOY" firstAttribute="centerY" secondItem="Qss-GO-DCw" secondAttribute="centerY" id="8CD-C2-8ol"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Haf-6n-JwR" secondAttribute="bottom" id="9JY-ta-tkr"/>
                 <constraint firstItem="Qss-GO-DCw" firstAttribute="top" secondItem="O6v-30-cPp" secondAttribute="bottom" constant="10" id="AOz-O4-GlM"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="jXm-t5-5AQ" secondAttribute="trailing" constant="10" id="BwA-AB-Cj6"/>
                 <constraint firstItem="eMm-0s-JxQ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="CAR-Nf-hPc"/>
                 <constraint firstItem="fpP-Sx-6sA" firstAttribute="centerY" secondItem="O6v-30-cPp" secondAttribute="centerY" id="Eh3-cQ-pIN"/>
+                <constraint firstItem="Haf-6n-JwR" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="GJ7-Gr-3sy"/>
                 <constraint firstItem="F8d-Z8-mqP" firstAttribute="top" secondItem="loi-so-wQI" secondAttribute="bottom" constant="10" id="Gje-LU-DE7"/>
                 <constraint firstItem="loi-so-wQI" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="H5r-zd-fgM"/>
                 <constraint firstItem="cIx-Rv-bAZ" firstAttribute="centerY" secondItem="F8d-Z8-mqP" secondAttribute="centerY" id="Hlf-Pu-M18"/>
@@ -243,6 +266,7 @@
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="igL-Mm-MJD" secondAttribute="trailing" constant="10" id="XWB-Wc-bdN"/>
                 <constraint firstItem="Qss-GO-DCw" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="XYR-46-JbQ"/>
                 <constraint firstItem="YEH-e9-ozV" firstAttribute="leading" secondItem="e05-Xy-NOY" secondAttribute="trailing" constant="10" id="Xic-wD-JNh"/>
+                <constraint firstItem="Haf-6n-JwR" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="aNO-iU-d6f"/>
                 <constraint firstItem="YEH-e9-ozV" firstAttribute="centerY" secondItem="Qss-GO-DCw" secondAttribute="centerY" id="aam-iG-4Pt"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ibP-3S-cPs" secondAttribute="trailing" constant="10" id="akg-N5-ceC"/>
                 <constraint firstItem="ddn-BD-HYt" firstAttribute="top" secondItem="F8d-Z8-mqP" secondAttribute="bottom" constant="20" id="dEZ-9g-V2u"/>
